@@ -1,7 +1,7 @@
 <?php
 
 // Includes
-include("./createProduto.php");
+//include("./functions.php");
 
 // Definindo o valor para login
 $loginOk = true;
@@ -9,7 +9,7 @@ $loginOk = true;
 // Verificar se o form de login foi enviado
 if($_GET){
 
-    // Buscar um usuário com o email enviado no $_GET['email']
+    
     $email = $_GET['email'];
     $senha = $_GET['senha'];
     $usuario = buscarUsuarios();
@@ -28,7 +28,7 @@ if($_GET){
 
                 $_SESSION['email'] = $usuario['email'];
         
-                // Redirecionando para a página que lista usuarios
+                // Redirecionando para a página que lista produtos
                 header('location: ./createProduto.php');
 
 
