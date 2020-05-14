@@ -30,7 +30,10 @@ if($_GET){
         
                 // Redirecionando para a página que lista produtos
                 header('location: ./createProduto.php');
-
+                }
+              }
+            }
+          }
 
 
 
